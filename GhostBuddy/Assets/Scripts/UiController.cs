@@ -18,6 +18,7 @@ public class UiController : MonoBehaviour
 
     private void Awake()
     {
+        Application.targetFrameRate = 30;
         SetInitialState();
         
         _startButton.onClick.AddListener(StartTimer);
